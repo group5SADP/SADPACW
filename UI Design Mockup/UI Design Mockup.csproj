@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E9515E1-E232-4233-AD90-525CB9F56751}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UI_Design_Mockup</RootNamespace>
+    <AssemblyName>UI Design Mockup</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACWView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACWView.Designer.cs">
+      <DependentUpon>ACWView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBase.Designer.cs">
+      <DependentUpon>AdminBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManageAnnouncements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminManageAnnouncements.Designer.cs">
+      <DependentUpon>AdminManageAnnouncements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminManageUsers.Designer.cs">
+      <DependentUpon>AdminManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadlineView.Designer.cs">
+      <DependentUpon>DeadlineView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorofStudiesBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorofStudiesBase.Designer.cs">
+      <DependentUpon>DirectorofStudiesBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAnnouncement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAnnouncement.Designer.cs">
+      <DependentUpon>EditAnnouncement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackPage.Designer.cs">
+      <DependentUpon>FeedbackPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFail.Designer.cs">
+      <DependentUpon>LoginFail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeratorBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeratorBase.Designer.cs">
+      <DependentUpon>ModeratorBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleLeaderBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleLeaderBase.Designer.cs">
+      <DependentUpon>ModuleLeaderBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleTeam.Designer.cs">
+      <DependentUpon>ModuleTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleTeamView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleTeamView.Designer.cs">
+      <DependentUpon>ModuleTeamView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAnnouncement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAnnouncement.Designer.cs">
+      <DependentUpon>NewAnnouncement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel.Designer.cs">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelAdmin.Designer.cs">
+      <DependentUpon>PanelAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentAnnouncements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAnnouncements.Designer.cs">
+      <DependentUpon>StudentAnnouncements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentBase.Designer.cs">
+      <DependentUpon>StudentBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentSchedule.Designer.cs">
+      <DependentUpon>StudentSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamPopup.Designer.cs">
+      <DependentUpon>TeamPopup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ACWView.resx">
+      <DependentUpon>ACWView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBase.resx">
+      <DependentUpon>AdminBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminManageAnnouncements.resx">
+      <DependentUpon>AdminManageAnnouncements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminManageUsers.resx">
+      <DependentUpon>AdminManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeadlineView.resx">
+      <DependentUpon>DeadlineView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorofStudiesBase.resx">
+      <DependentUpon>DirectorofStudiesBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAnnouncement.resx">
+      <DependentUpon>EditAnnouncement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackPage.resx">
+      <DependentUpon>FeedbackPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFail.resx">
+      <DependentUpon>LoginFail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeratorBase.resx">
+      <DependentUpon>ModeratorBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleLeaderBase.resx">
+      <DependentUpon>ModuleLeaderBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleTeam.resx">
+      <DependentUpon>ModuleTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleTeamView.resx">
+      <DependentUpon>ModuleTeamView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAnnouncement.resx">
+      <DependentUpon>NewAnnouncement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel.resx">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelAdmin.resx">
+      <DependentUpon>PanelAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StudentAnnouncements.resx">
+      <DependentUpon>StudentAnnouncements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentBase.resx">
+      <DependentUpon>StudentBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentSchedule.resx">
+      <DependentUpon>StudentSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamPopup.resx">
+      <DependentUpon>TeamPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
